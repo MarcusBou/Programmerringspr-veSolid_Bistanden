@@ -15,6 +15,9 @@ namespace ProgrammerringsprøveSolid_Bistanden
         /// Method For Gathering Nectar
         /// </summary>
         public void GatherNectar(object callback);
+        /// <summary>
+        /// for emptying honey stomach
+        /// </summary>
         public void EmptyHoneyStomach();
     }
 }
