@@ -12,11 +12,23 @@ namespace ProgrammerringsprøveSolid_Bistanden
     public class BeehiveManager : IBeehiveManager
     {
         private IBeehive beehive;
+        private List<Bee> beelist;
         public IBeehive Beehive {  get { return beehive; } }
 
+        /// <summary>
+        /// Creates Behive Manager with 1000 bees
+        /// </summary>
         public BeehiveManager()
         {
-            beehive = new Beehive();
+            for (int i = 0; i < 633; i++)
+            {
+                beelist.Add(new GatherBee(this));
+            }
+            for (int i = 0; i < 333; i++)
+            {
+                beelist.Add(new ProductionBee(this));
+            }
+            beehive = new Beehive(beelist);
         }
 
         public void DequeueGatherWithoutNectar()

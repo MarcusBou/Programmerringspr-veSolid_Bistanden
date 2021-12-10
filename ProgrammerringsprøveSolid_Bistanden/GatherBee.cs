@@ -17,7 +17,7 @@ namespace ProgrammerringsprøveSolid_Bistanden
             Random rnd = new Random();
             Thread.Sleep(rnd.Next(100,501));
             this.honeyStomachFull = true;
-            this.beehives.EnqueueGatherWithNectar();
+            this.beehives.EnqueueGatherWithNectar(this);
         }
 
         public void EmptyHoneyStomach()

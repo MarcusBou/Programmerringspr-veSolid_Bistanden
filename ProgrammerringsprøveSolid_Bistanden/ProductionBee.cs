@@ -17,7 +17,7 @@ namespace ProgrammerringsprøveSolid_Bistanden
         {
             Random rnd = new Random();
             Thread.Sleep(rnd.Next(100, 701));
-            this.beehives.EnqueueNotWorkingProducer();
+            this.beehives.EnqueueNotWorkingProducer(this);
         }
     }
 }

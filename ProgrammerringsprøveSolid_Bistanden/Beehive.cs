@@ -18,6 +18,7 @@ namespace ProgrammerringsprøveSolid_Bistanden
         private Queue<IGather> gathersReadyForFlight = new Queue<IGather>();
         private Queue<IProduce> produceresReadyToHelp = new Queue<IProduce>();
         private List<Bee> bees;
+        private Bee queenBee;
 
         public Queue<IGather> GathersForDelivery { get {  return gathersForDelivery; } }
         public Queue<IGather> GathersReadyForFlight { get { return gathersReadyForFlight; } }
