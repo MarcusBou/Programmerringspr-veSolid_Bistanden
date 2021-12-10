@@ -6,7 +6,7 @@ namespace ProgrammerringsprøveSolid_Bistanden
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ///NÅET IKKE GUI! ;(
         }
     }
 }
